@@ -1,0 +1,23 @@
+Một hình lăng trụ có n cạnh đáy. Hãy viết chương trình sao cho kết quả trả về là tổng của số mặt, số đỉnh và số cạnh của hình lăng trụ đó
+
+Ví dụ:
+
+Với n = 5 thì edgesNumber = 32.
+Giải thích: Do hình lăng trụ đó có 5 cạnh đáy nên số mặt sẽ là 7, số đỉnh là 10 và số cạnh là 15. Vì vậy kết quả trả về là 7 + 10 + 15 = 32.
+Đầu vào/Đầu ra:
+
+[Thời gian chạy] 0.5s với C++, 3s với Java và C#, 4s với Python, Go và JavaScript.
+
+[Đầu vào] Integer n
+1 ≤ n ≤ int.Max
+[Đầu ra] Integer 
+Tổng số mặt, số cạnh và số đỉnh của hình lăng trụ đó.
+
+
+
+code:
+
+int EdgesNumber(int n)
+{
+	return (n+2) + (n*2) + (n*3);
+}
